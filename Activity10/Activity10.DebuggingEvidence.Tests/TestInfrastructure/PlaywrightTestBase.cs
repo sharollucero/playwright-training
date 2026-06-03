@@ -9,7 +9,7 @@ public abstract class PlaywrightTestBase : IAsyncLifetime
     protected IBrowserContext Context = null!;
     protected IPage Page = null!;
 
-    protected virtual bool Headless => false;
+    protected virtual bool Headless => true;
 
     public async Task InitializeAsync()
     {

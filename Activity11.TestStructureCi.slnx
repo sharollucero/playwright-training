@@ -1,3 +1,9 @@
 <Solution>
+  <Folder Name="/Activity10/">
+    <Project Path="Activity10/Activity10.DebuggingEvidence.Tests/Activity10.DebuggingEvidence.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Activity6/">
+    <Project Path="Activity6/Activity6.MuiTableAutomation.Tests/Activity6.MuiTableAutomation.Tests.csproj" />
+  </Folder>
   <Project Path="Activity11.TestStructureCi.Tests/Activity11.TestStructureCi.Tests.csproj" />
 </Solution>

@@ -19,12 +19,10 @@ public sealed class DebuggingEvidenceTests : PlaywrightTestBase
                 "a@a.com",
                 "password"
             );
-        
-            await loginPage.AssertDashboardLoadedAsync();
-    
-               //await CaptureScreenshotAsync(nameof(Should_Login_And_Capture_Debugging_Evidence));
 
-            
+            await loginPage.AssertDashboardLoadedAsync();
+
+            await CaptureScreenshotAsync(nameof(Should_Login_And_Capture_Debugging_Evidence));
         }
         catch
         {
@@ -33,7 +31,6 @@ public sealed class DebuggingEvidenceTests : PlaywrightTestBase
         }
     }
 
-    
     [Fact]
     public async Task Should_Handle_Flaky_Loading_Using_Expect_And_Retry_Style_Assertion()
     {
@@ -93,5 +90,4 @@ public sealed class DebuggingEvidenceTests : PlaywrightTestBase
             Page.GetByRole(AriaRole.Heading, new() { Name = "Dashboard" })
         ).ToBeVisibleAsync();
     }
-    
 }
